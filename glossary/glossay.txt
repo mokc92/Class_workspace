@@ -143,7 +143,19 @@ for x in xrange(3):
     print x
 else:
     print 'Final x = %d' % (x)
+	
 ```
+
+You want to keep in mind that in general, statements are executed sequentially. This means that the first statement will be executed first, followed by the second and so on.
+In addition, all objects that are inside of each loop remains inside of each loop. In other words, as soon as an execution leaves the scope of the loop, all objects
+that were created in that scope are destroyed.
+
+There are also three loop control statements that Python supports:
+
+Break statement: terminates the loop and transfers the execution to the statement immediately following the loop
+Continue statement: makes the loop skip the remainder of its body and immediately retest its condition prior to reiterating
+Pass statement: used when a statement is required syntactically but you don't want any command or code to execute
+
 ##Software 
 
 Software is a information system that uses a computer or other programs to perform tasks based on user input. Software contains blocks of code that are run when certain information is given to it. 
